@@ -5,20 +5,20 @@ info:
     name: Software Engineers Unite
   version: 1.0.0
 servers:
-  - url: http://localhost:8080/v1
+  - url: http://localhost:8081/v1
 paths:
-  /bubbleSort:
+  /selectionSort:
     post:
-      summary: Bubble Sort
+      summary: Selection Sort
       requestBody:
-        description: 'bubblesort'
+        description: selectionsort
         required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/intArray'
       responses:
-        201:
+        '201':
           description: Created
           content:
             application/json:
