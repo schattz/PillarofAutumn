@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: Sorting Algorithum Backend
+  license:
+    name: Software Eningeers Unite
+  version: 1.0.0
+servers:
+  - url: http://pillarOfAutumn/v1
+paths:
+  /bubbleSort:
+    post:
+      summary: Bubble Sort
+      requestBody:
+        description: 'bubblesort'
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/intArray'
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/intArray'
+components:
+  schemas:
+    intArray:
+      type: array
+      items:
+        type: integer

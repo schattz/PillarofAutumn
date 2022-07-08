@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="swagger-spring-1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PillarOfAutumn/bubbleSortService/target/swagger-spring-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
